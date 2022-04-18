@@ -1,0 +1,3 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# ping georgebrown.ca
+PING georgebrown.ca (99.79.139.11) 56(84) bytes of data.
+64 bytes from ec2-99-79-139-11.ca-central-1.compute.amazonaws.com (99.79.139.11)

@@ -1,0 +1,63 @@
+1.
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# nmap georgebrown.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-03-11 02:19 UTC
+Nmap scan report for georgebrown.ca (99.79.139.11)
+Host is up (0.0086s latency).
+rDNS record for 99.79.139.11: ec2-99-79-139-11.ca-central-1.compute.amazonaws.com
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 5.07 seconds
+
+2.
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# nmap -p 1 google.ca
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-03-11 02:21 UTC
+Nmap scan report for google.ca (142.251.41.67)
+Host is up (0.0016s latency).
+Other addresses for google.ca (not scanned): 2607:f8b0:400b:804::2003
+rDNS record for 142.251.41.67: yyz10s20-in-f3.1e100.net
+
+PORT  STATE    SERVICE
+1/tcp filtered tcpmux
+
+Nmap done: 1 IP address (1 host up) scanned in 0.34 seconds
+
+3.
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# nmap -p 1-10 amazon.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-03-11 02:21 UTC
+Nmap scan report for amazon.com (54.239.28.85)
+Host is up (0.020s latency).
+Other addresses for amazon.com (not scanned): 176.32.103.205 205.251.242.103
+
+PORT   STATE  SERVICE
+1/tcp  closed tcpmux
+2/tcp  closed compressnet
+3/tcp  closed compressnet
+4/tcp  closed unknown
+5/tcp  closed rje
+6/tcp  closed unknown
+7/tcp  closed echo
+8/tcp  closed unknown
+9/tcp  closed discard
+10/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
+
+4.
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# nmap -F naver.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-03-11 02:22 UTC
+Nmap scan report for naver.com (223.130.195.200)
+Host is up (0.25s latency).
+Other addresses for naver.com (not scanned): 223.130.195.95 223.130.200.107 223.130.200.104
+Not shown: 96 filtered ports
+PORT      STATE  SERVICE
+80/tcp    open   http
+443/tcp   open   https
+8080/tcp  closed http-proxy
+10000/tcp closed snet-sensor-mgmt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.14 seconds
+
